@@ -3,202 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Umar Muhthar N</title>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Umar Muhthar N – Windows Administrator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --background: #f4f6f8;
-      --primary: #2a5d9f;
-      --accent: #e0ecff;
-      --text-dark: #1c1c1c;
-      --text-muted: #6b6b6b;
+      --lavender: #f3f0fa;
+      --primary: #6d44b8;
+      --text: #1f1f1f;
+      --muted: #666;
       --white: #fff;
-      --radius: 14px;
-      --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      --radius: 12px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: var(--background);
-      color: var(--text-dark);
+      font-family: 'Inter', sans-serif;
+      background-color: var(--lavender);
+      color: var(--text);
+      line-height: 1.6;
     }
 
     header {
-      background: var(--white);
+      padding: 2rem 1.5rem;
+      background-color: var(--white);
       box-shadow: var(--shadow);
-      padding: 1rem 0;
-      text-align: center;
-      border-bottom: 3px solid var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       color: var(--primary);
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-top: 0.3rem;
     }
 
     .hero {
-      text-align: center;
-      padding: 2rem 1rem 0;
-    }
-
-    .profile-photo {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--primary);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-      margin-bottom: 1rem;
-    }
-
-    .container {
-      max-width: 950px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      max-width: 1100px;
       margin: auto;
-      padding: 1.5rem;
     }
 
-    .card {
+    .hero img.profile {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 2rem;
+      border: 4px solid var(--primary);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .section {
       background: var(--white);
+      margin: 2rem 1.5rem;
+      padding: 2rem;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      transition: transform 0.2s ease;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .card:hover {
-      transform: translateY(-4px);
-    }
-
-    .card h2 {
+    .section h3 {
+      margin-bottom: 1rem;
       color: var(--primary);
-      margin-top: 0;
+      font-size: 1.5rem;
     }
 
     ul {
-      padding-left: 1.2rem;
+      list-style: disc;
+      margin-left: 1.5rem;
     }
 
-    .quote-arabic {
-      font-family: 'Amiri', serif;
-      font-size: 1.5rem;
-      direction: rtl;
-      text-align: right;
-      color: #444;
-      margin-top: 1.5rem;
+    .experience-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .experience-card img {
+      width: 60px;
+      height: auto;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
       font-size: 0.9rem;
-      color: var(--text-muted);
-      border-top: 1px solid #ccc;
+      color: var(--muted);
+      padding: 1rem 0;
     }
 
-    .btn {
-      background: var(--primary);
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 8px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #1d4677;
-    }
-
-    #contact-info {
-      display: none;
-      margin-top: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+    @media (max-width: 700px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
       }
 
-      .card {
-        padding: 1.5rem;
+      .hero img.profile {
+        margin-right: 0;
+        margin-bottom: 1rem;
       }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Umar Muhthar N</h1>
-  <p>Windows Administrator at Wipro | Islamic Scholar</p>
-</header>
+  <header>
+    <h1>Umar Muhthar N</h1>
+    <p>Windows Administrator @ Wipro</p>
+  </header>
 
-<section class="hero">
-  <img src="Umar.jpg" alt="Umar Muhthar N" class="profile-photo" />
-  <h2 style="margin-bottom: 0.3rem;">Welcome</h2>
-  <p style="color: var(--text-muted);">Professional. Spiritual. Balanced.</p>
-</section>
+  <section class="hero">
+    <img src="Umar.jpg" alt="Umar Muhthar" class="profile" />
+    <div class="hero-content">
+      <h2>Hi, I'm Umar</h2>
+      <p>A Windows Administrator focused on enterprise IT, automation, and server infrastructure. I build secure, reliable systems for large organizations like Wipro.</p>
+    </div>
+  </section>
 
-<div class="container">
+  <section class="section">
+    <h3>Work Experience</h3>
+    <div class="experience-card">
+      <img src="wipro.png" alt="Wipro Logo">
+      <div>
+        <strong>Windows Administrator</strong><br>
+        Wipro Technologies<br>
+        <small>July 2023 – Present (1 year)</small><br>
+        <ul>
+          <li>Managed Windows Server infrastructure and AD policies</li>
+          <li>Automated repetitive tasks using PowerShell</li>
+          <li>Worked with virtualization tools (VMware, Hyper-V)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I am a committed <strong>Windows Administrator</strong> at <strong>Wipro</strong>, responsible for ensuring efficient, secure, and optimized IT infrastructure.</p>
-    <p>Beyond technology, I am a passionate <strong>Islamic Scholar</strong>, engaged in teaching, studying classical texts, and contributing to the preservation of traditional knowledge.</p>
-  </div>
-
-  <div class="card">
-    <h2>Professional Skills</h2>
+  <section class="section">
+    <h3>Skills</h3>
     <ul>
       <li>Windows Server (2016–2022)</li>
-      <li>Active Directory & Group Policy</li>
+      <li>Active Directory, DNS, DHCP</li>
       <li>PowerShell Scripting & Automation</li>
-      <li>VMware / Hyper-V Virtualization</li>
-      <li>System Security & Hardening</li>
+      <li>Virtualization: VMware, Hyper-V</li>
+      <li>System Security & Patch Management</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
-    <h2>Islamic Contribution</h2>
-    <p>I specialize in Qur'anic exegesis (Tafsir), Fiqh, and Hadith. I aim to bridge classical understanding with the modern context, guiding people toward clarity and balance in Deen and Dunya.</p>
-    <div class="quote-arabic">
-      وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ
-    </div>
-    <p style="text-align:right; font-style: italic;">— Surah Hud, 88</p>
-  </div>
+  <section class="section">
+    <h3>Contact Me</h3>
+    <p>Email: <strong>umar.muhthar@example.com</strong></p>
+    <p>Phone: +91-98765-43210</p>
+    <p>Location: Kerala, India</p>
+  </section>
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>If you'd like to collaborate or consult, feel free to get in touch:</p>
-    <button class="btn" onclick="toggleContact()">Show Contact Info</button>
-    <div id="contact-info">
-      <p><strong>Email:</strong> umar.muhthar@example.com</p>
-      <p><strong>Phone:</strong> +91-98765-43210</p>
-      <p><strong>Location:</strong> Kerala, India</p>
-    </div>
-  </div>
-
-</div>
-
-<footer>
-  &copy; 2025 Umar Muhthar N | Built with Tawakkul and Ikhlaas.
-</footer>
-
-<script>
-  function toggleContact() {
-    const contact = document.getElementById("contact-info");
-    contact.style.display = contact.style.display === "none" ? "block" : "none";
-  }
-</script>
+  <footer>
+    &copy; 2025 Umar Muhthar N — Built with simplicity and focus.
+  </footer>
 
 </body>
 </html>
