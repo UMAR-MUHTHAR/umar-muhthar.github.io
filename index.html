@@ -3,60 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Umar Muhthar N - Windows Administrator & Islamic Scholar</title>
+  <title>Umar Muhthar N</title>
   <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --background: #f7f9fc;
-      --primary: #2d6cdf;
-      --text-dark: #1a1a1a;
-      --text-muted: #666;
+      --background: #f4f6f8;
+      --primary: #2a5d9f;
+      --accent: #e0ecff;
+      --text-dark: #1c1c1c;
+      --text-muted: #6b6b6b;
       --white: #fff;
-      --border-radius: 16px;
-      --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      --radius: 14px;
+      --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     }
 
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: var(--background);
+      background: var(--background);
       color: var(--text-dark);
-      line-height: 1.7;
     }
 
     header {
       background: var(--white);
-      text-align: center;
-      padding: 3rem 1rem 2rem;
       box-shadow: var(--shadow);
+      padding: 1rem 0;
+      text-align: center;
       border-bottom: 3px solid var(--primary);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
-      font-weight: 700;
+      font-size: 2.5rem;
       color: var(--primary);
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: var(--text-muted);
-      margin-top: 0.5rem;
+      margin-top: 0.3rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem 0;
+    }
+
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      margin-bottom: 1rem;
     }
 
     .container {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 950px;
+      margin: auto;
+      padding: 1.5rem;
     }
 
     .card {
       background: var(--white);
-      border-radius: var(--border-radius);
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: 2rem;
       margin-bottom: 2rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
     }
 
     .card h2 {
@@ -64,25 +83,25 @@
       margin-top: 0;
     }
 
-    .card ul {
+    ul {
       padding-left: 1.2rem;
     }
 
     .quote-arabic {
       font-family: 'Amiri', serif;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       direction: rtl;
       text-align: right;
       color: #444;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
     footer {
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1rem;
       font-size: 0.9rem;
       color: var(--text-muted);
-      border-top: 1px solid #ddd;
+      border-top: 1px solid #ccc;
     }
 
     .btn {
@@ -97,7 +116,7 @@
     }
 
     .btn:hover {
-      background: #244fb8;
+      background: #1d4677;
     }
 
     #contact-info {
@@ -123,37 +142,43 @@
   <p>Windows Administrator at Wipro | Islamic Scholar</p>
 </header>
 
+<section class="hero">
+  <img src="umar.jpg" alt="Umar Muhthar N" class="profile-photo" />
+  <h2 style="margin-bottom: 0.3rem;">Welcome</h2>
+  <p style="color: var(--text-muted);">Professional. Spiritual. Balanced.</p>
+</section>
+
 <div class="container">
 
   <div class="card">
     <h2>About Me</h2>
-    <p>I am a dedicated <strong>Windows Administrator</strong> at <strong>Wipro</strong>, responsible for maintaining robust enterprise systems, enhancing IT operations, and ensuring system security and reliability.</p>
-    <p>Alongside my career, I am an <strong>Islamic Scholar</strong> with a deep passion for the Qur'an, Hadith, Fiqh, and classical Islamic literature. My mission is to merge professional excellence with spiritual integrity.</p>
+    <p>I am a committed <strong>Windows Administrator</strong> at <strong>Wipro</strong>, responsible for ensuring efficient, secure, and optimized IT infrastructure.</p>
+    <p>Beyond technology, I am a passionate <strong>Islamic Scholar</strong>, engaged in teaching, studying classical texts, and contributing to the preservation of traditional knowledge.</p>
   </div>
 
   <div class="card">
-    <h2>Professional Expertise</h2>
+    <h2>Professional Skills</h2>
     <ul>
-      <li>Windows Server Administration (2012R2, 2016, 2019, 2022)</li>
-      <li>Active Directory & Group Policy Management</li>
-      <li>PowerShell Automation</li>
-      <li>VMware, Hyper-V Virtualization</li>
-      <li>System Security & Patching</li>
+      <li>Windows Server (2016–2022)</li>
+      <li>Active Directory & Group Policy</li>
+      <li>PowerShell Scripting & Automation</li>
+      <li>VMware / Hyper-V Virtualization</li>
+      <li>System Security & Hardening</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>Islamic Journey</h2>
-    <p>I have studied under various traditional scholars and actively engage in teaching, delivering talks, and authoring Islamic content. My focus lies in preserving authentic knowledge while making it relevant to modern lives.</p>
+    <h2>Islamic Contribution</h2>
+    <p>I specialize in Qur'anic exegesis (Tafsir), Fiqh, and Hadith. I aim to bridge classical understanding with the modern context, guiding people toward clarity and balance in Deen and Dunya.</p>
     <div class="quote-arabic">
-      ﭑ ﭒ ﭓ ﭔ ﭕ ﭖ ﭗ ﭘ ﭙ ﭚ ﭛ ﭜ ﭝ ﭞ ﭟ
+      وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ
     </div>
-    <p style="text-align:right; font-style: italic; margin-top: 0.3rem;">"And my success is only by Allah" — Hud:88</p>
+    <p style="text-align:right; font-style: italic;">— Surah Hud, 88</p>
   </div>
 
   <div class="card">
     <h2>Contact</h2>
-    <p>If you'd like to collaborate, consult, or learn together — reach out:</p>
+    <p>If you'd like to collaborate or consult, feel free to get in touch:</p>
     <button class="btn" onclick="toggleContact()">Show Contact Info</button>
     <div id="contact-info">
       <p><strong>Email:</strong> umar.muhthar@example.com</p>
@@ -165,7 +190,7 @@
 </div>
 
 <footer>
-  &copy; 2025 Umar Muhthar N | Built with sincerity and Tawakkul.
+  &copy; 2025 Umar Muhthar N | Built with Tawakkul and Ikhlaas.
 </footer>
 
 <script>
