@@ -99,16 +99,30 @@
       margin-left: 1.5rem;
     }
 
-    .experience-card {
+    .experience-row {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      margin-top: 1rem;
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
     }
 
-    .experience-card img {
-      width: 60px;
+    .experience-row img.logo {
+      width: 22px;
       height: auto;
+      vertical-align: middle;
+    }
+
+    .education-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .education-card img {
+      width: 50px;
+      height: auto;
+      margin-top: 0.4rem;
     }
 
     footer {
@@ -128,6 +142,12 @@
         margin-right: 0;
         margin-bottom: 1rem;
       }
+
+      .education-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -135,30 +155,48 @@
 
   <header>
     <h1>Umar Muhthar N</h1>
-    <p>Windows Administrator @ Wipro</p>
+    <p>Windows Administrator @ <img src="wipro.png" alt="Wipro" class="logo" /></p>
   </header>
 
   <section class="hero">
     <img src="Umar.jpg" alt="Umar Muhthar" class="profile" />
     <div class="hero-content">
       <h2>Hi, I'm Umar</h2>
-      <p>A Windows Administrator focused on enterprise IT, automation, and server infrastructure. I build secure, reliable systems for large organizations like Wipro.</p>
+      <p>Windows Administrator focused on enterprise IT, automation, and infrastructure. Building secure and scalable systems for businesses like Wipro.</p>
     </div>
   </section>
 
   <section class="section">
     <h3>Work Experience</h3>
-    <div class="experience-card">
-      <img src="wipro.png" alt="Wipro Logo">
+    <div class="experience-row">
+      <img src="wipro.png" alt="Wipro" class="logo" />
+      <strong>Windows Administrator – Wipro Technologies</strong>
+    </div>
+    <small>July 2023 – Present (1 year)</small>
+    <ul>
+      <li>Managed Windows Server infrastructure and AD policies</li>
+      <li>Automated tasks using PowerShell scripting</li>
+      <li>Worked with virtualization (VMware, Hyper-V)</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h3>Education</h3>
+    <div class="education-card">
+      <img src="calicut.png" alt="Calicut University" />
       <div>
-        <strong>Windows Administrator</strong><br>
-        Wipro Technologies<br>
-        <small>July 2023 – Present (1 year)</small><br>
-        <ul>
-          <li>Managed Windows Server infrastructure and AD policies</li>
-          <li>Automated repetitive tasks using PowerShell</li>
-          <li>Worked with virtualization tools (VMware, Hyper-V)</li>
-        </ul>
+        <strong>B.Sc Electronics</strong><br>
+        Malabar College of Advanced Studies, Vengara<br>
+        Under Calicut University
+      </div>
+    </div>
+
+    <div class="education-card">
+      <img src="bits.png" alt="BITS Pilani" />
+      <div>
+        <strong>M.Tech in Computer Infrastructure</strong><br>
+        Work-Integrated Learning Program (WILP)<br>
+        Birla Institute of Technology and Science, Pilani
       </div>
     </div>
   </section>
@@ -168,9 +206,9 @@
     <ul>
       <li>Windows Server (2016–2022)</li>
       <li>Active Directory, DNS, DHCP</li>
-      <li>PowerShell Scripting & Automation</li>
+      <li>PowerShell Automation</li>
       <li>Virtualization: VMware, Hyper-V</li>
-      <li>System Security & Patch Management</li>
+      <li>Patch Management & System Security</li>
     </ul>
   </section>
 
@@ -182,7 +220,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Umar Muhthar N — Built with simplicity and focus.
+    &copy; 2025 Umar Muhthar N — Crafted with clarity & commitment.
   </footer>
 
 </body>
