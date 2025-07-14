@@ -99,19 +99,6 @@
       margin-left: 1.5rem;
     }
 
-    .experience-row {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .experience-row img.logo {
-      width: 22px;
-      height: auto;
-      vertical-align: middle;
-    }
-
     .education-card {
       display: flex;
       align-items: flex-start;
@@ -123,6 +110,18 @@
       width: 50px;
       height: auto;
       margin-top: 0.4rem;
+    }
+
+    .experience-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .experience-card img {
+      width: 60px;
+      height: auto;
     }
 
     footer {
@@ -155,7 +154,7 @@
 
   <header>
     <h1>Umar Muhthar N</h1>
-    <p>Windows Administrator @ <img src="wipro.png" alt="Wipro" class="logo" /></p>
+    <p>Windows Administrator</p>
   </header>
 
   <section class="hero">
@@ -168,22 +167,22 @@
 
   <section class="section">
     <h3>Work Experience</h3>
-    <div class="experience-row">
-      <img src="wipro.png" alt="Wipro" class="logo" />
-      <strong>Windows Administrator – Wipro Technologies</strong>
-    </div>
+    <strong>Windows Administrator – Wipro Technologies</strong><br>
     <small>July 2023 – Present (1 year)</small>
     <ul>
       <li>Managed Windows Server infrastructure and AD policies</li>
       <li>Automated tasks using PowerShell scripting</li>
       <li>Worked with virtualization (VMware, Hyper-V)</li>
     </ul>
+    <div class="experience-card">
+      <img src="wipro.png" alt="Wipro Logo" />
+    </div>
   </section>
 
   <section class="section">
     <h3>Education</h3>
     <div class="education-card">
-      <img src="calicut.jpg" alt="Calicut University" />
+      <img src="calicut.png" alt="Calicut University" />
       <div>
         <strong>B.Sc Electronics</strong><br>
         Malabar College of Advanced Studies, Vengara<br>
