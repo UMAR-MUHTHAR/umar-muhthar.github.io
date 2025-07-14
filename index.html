@@ -99,29 +99,19 @@
       margin-left: 1.5rem;
     }
 
-    .education-card {
+    .education-card,
+    .experience-card {
       display: flex;
       align-items: flex-start;
       gap: 1rem;
       margin-bottom: 1.5rem;
     }
 
-    .education-card img {
+    .education-card img,
+    .experience-card img {
       width: 50px;
       height: auto;
       margin-top: 0.4rem;
-    }
-
-    .experience-card {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .experience-card img {
-      width: 60px;
-      height: auto;
     }
 
     footer {
@@ -142,7 +132,8 @@
         margin-bottom: 1rem;
       }
 
-      .education-card {
+      .education-card,
+      .experience-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -167,22 +158,24 @@
 
   <section class="section">
     <h3>Work Experience</h3>
-    <strong>Windows Administrator – Wipro Technologies</strong><br>
-    <small>July 2023 – Present (1 year)</small>
-    <ul>
-      <li>Managed Windows Server infrastructure and AD policies</li>
-      <li>Automated tasks using PowerShell scripting</li>
-      <li>Worked with virtualization (VMware, Hyper-V)</li>
-    </ul>
     <div class="experience-card">
       <img src="wipro.png" alt="Wipro Logo" />
+      <div>
+        <strong>Windows Administrator – Wipro Technologies</strong><br>
+        <small>July 2023 – Present (1 year)</small>
+        <ul>
+          <li>Managed Windows Server infrastructure and AD policies</li>
+          <li>Automated tasks using PowerShell scripting</li>
+          <li>Worked with virtualization (VMware, Hyper-V)</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <h3>Education</h3>
     <div class="education-card">
-      <img src="calicut.png" alt="Calicut University" />
+      <img src="calicut.jpg" alt="Calicut University" />
       <div>
         <strong>B.Sc Electronics</strong><br>
         Malabar College of Advanced Studies, Vengara<br>
