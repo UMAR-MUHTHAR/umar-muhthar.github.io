@@ -35,17 +35,36 @@ nav a:hover {
   margin-right: auto;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .education-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .education-card img {
-  width: 50px;
+  width: 60px;
   height: auto;
-  margin-top: 0.4rem;
+}
+
+.education-card div {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 1rem 0;
 }
 
   </style>
@@ -62,19 +81,21 @@ nav a:hover {
       <a href="contact.html">Contact</a>
     </nav>
   </header>  <section class="section">
-    <div class="education-card">
-      <img src="calicut.png" alt="Calicut University Logo">
-      <div>
-        <strong>B.Sc Electronics</strong><br>
-        Malabar College of Advanced Studies, Vengara<br>
-        Under Calicut University
-      </div>
-    </div><div class="education-card">
-  <img src="bits.png" alt="BITS Pilani Logo">
-  <div>
-    <strong>M.Tech in Computer Infrastructure</strong><br>
-    Work-Integrated Learning Program (WILP)<br>
-    Birla Institute of Technology and Science, Pilani
+    <div class="card-container">
+      <div class="education-card">
+        <img src="calicut.png" alt="Calicut University Logo">
+        <div>
+          <strong>B.Sc Electronics</strong><br>
+          Malabar College of Advanced Studies, Vengara<br>
+          Under Calicut University
+        </div>
+      </div><div class="education-card">
+    <img src="bits.png" alt="BITS Pilani Logo">
+    <div>
+      <strong>M.Tech in Computer Infrastructure</strong><br>
+      Work-Integrated Learning Program (WILP)<br>
+      Birla Institute of Technology and Science, Pilani
+    </div>
   </div>
 </div>
 
